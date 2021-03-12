@@ -5,7 +5,7 @@ try {
         host: '127.0.0.1',
         port: '3307',
         user: 'root',
-        password: '.x1524F.',
+        password: '1524',
         database: 'empresa',
     });
     connection.connect(function(err){
@@ -18,5 +18,5 @@ try {
 
     module.exports = connection;
 } catch (error) {
-    console.log('Error en database.js');
+    console.log(error);
 }

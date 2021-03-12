@@ -9,6 +9,6 @@ app.use(express.urlencoded({ extended: false }));
 
 // ROUTES
 app.use('/api/departamentos', require('./routes/departamentos.routes'))
-// app.use('/api/empleados', require('./routes/empleados.routes'))
+app.use('/api/empleados', require('./routes/empleados.routes'))
 
 module.exports = app;
